@@ -94,7 +94,7 @@ def fun1(username_text, password_text):
         time.sleep(2)
         driver.find_elements_by_css_selector('input.srk.jiaodian')[1].click()
 
-        driver.switch_to.active_element.send_keys(u'西安科技大学')
+        driver.switch_to.active_element.send_keys(u'三卫家园南苑')
 
         # 今日体温
         jQuery = r'$("input[name=\'jrtwfw5\']")[0].click()'
