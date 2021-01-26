@@ -75,13 +75,13 @@ def fun1(username_text, password_text):
         driver.execute_script('$("#xxd").show();')
         driver.execute_script('$("#hqddlx").val("2");')
         driver.execute_script('$("#guo").val("中国");')
-        driver.execute_script('''$("#sheng").val('陕西省');''')
-        driver.execute_script('''$("#shi").val('西安市');''')
-        driver.execute_script('''$("#xian").val('碑林区');''')
-        driver.execute_script('''$("#szdd4").val('中国 陕西省 西安市 碑林区');''')
-        driver.execute_script('''$(".szdd4").text('中国 陕西省 西安市 碑林区');''')
-        driver.execute_script('''$("#jingdu").val('108.967363');''')
-        driver.execute_script('''$("#weidu").val('34.231581');''')
+        driver.execute_script('''$("#sheng").val('浙江省');''')
+        driver.execute_script('''$("#shi").val('杭州市');''')
+        driver.execute_script('''$("#xian").val('江干区');''')
+        driver.execute_script('''$("#szdd4").val('中国 浙江省 杭州市 江干区');''')
+        driver.execute_script('''$(".szdd4").text('中国 浙江省 杭州市 江干区');''')
+        driver.execute_script('''$("#jingdu").val('120.268555');''')
+        driver.execute_script('''$("#weidu").val('30.3304556');''')
 
         time.sleep(1)
         # input = WebDriverWait(driver, 50).until(EC.visibility_of_any_elements_located((By.CSS_SELECTOR, 'input.srk.jiaodian')))
@@ -101,7 +101,7 @@ def fun1(username_text, password_text):
         driver.execute_script(jQuery)
         radios = driver.find_elements_by_css_selector('input[type=radio]')
         for radio in radios:
-            if radio.get_attribute(u"name") == u"jrsfzx3" and radio.get_attribute(u"value") == u"是":
+            if radio.get_attribute(u"name") == u"jrsfzx3" and radio.get_attribute(u"value") == u"否":
                 if not radio.is_selected():
                     radio.click()
                     print("今日在校：" + radio.get_attribute("value"))
