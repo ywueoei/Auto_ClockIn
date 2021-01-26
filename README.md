@@ -1,6 +1,6 @@
 <div align="center">
 <h1 align="center">
-西安科技大学每日自动健康打卡
+健康打卡
  </h1>
 
 
@@ -21,8 +21,8 @@
 
 | Name       | Value            |
 | ---------- | ---------------- |
-| USERNAME_TEXT | 西科E站账号 |
-| PASSWORD_TEXT   | 西科E站密码 |
+| USERNAME_TEXT | 账号 |
+| PASSWORD_TEXT   | 密码 |
 
 
 3. **如需微信订阅通知请如下操作**  
